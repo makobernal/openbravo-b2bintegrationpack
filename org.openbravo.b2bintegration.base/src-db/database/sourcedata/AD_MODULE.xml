@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+<!--402881052F009B08012F0142E6A50017--><AD_MODULE>
+<!--402881052F009B08012F0142E6A50017-->  <AD_MODULE_ID><![CDATA[402881052F009B08012F0142E6A50017]]></AD_MODULE_ID>
+<!--402881052F009B08012F0142E6A50017-->  <AD_CLIENT_ID><![CDATA[0]]></AD_CLIENT_ID>
+<!--402881052F009B08012F0142E6A50017-->  <AD_ORG_ID><![CDATA[0]]></AD_ORG_ID>
+<!--402881052F009B08012F0142E6A50017-->  <ISACTIVE><![CDATA[Y]]></ISACTIVE>
+<!--402881052F009B08012F0142E6A50017-->  <NAME><![CDATA[B2B Integration - Commons]]></NAME>
+<!--402881052F009B08012F0142E6A50017-->  <VERSION><![CDATA[1.0.0]]></VERSION>
+<!--402881052F009B08012F0142E6A50017-->  <DESCRIPTION><![CDATA[This module provides the common framework and software artifacts for the modules in the B2B Integration Pack]]></DESCRIPTION>
+<!--402881052F009B08012F0142E6A50017-->  <HELP><![CDATA[Software artifacts and data structures belonging to this module will be used by several other dependent upstream modules. Therefore, common data structures used by more than one module in the B2B Integration pack should belong to this module. Things included in this module are the HTML emailing framework, Activity Log, basic authentication for vendors and wizards for new B2B Partners and users, datasets containing base roles.]]></HELP>
+<!--402881052F009B08012F0142E6A50017-->  <URL><![CDATA[http://forge.openbravo.com/projects/b2bintegration]]></URL>
+<!--402881052F009B08012F0142E6A50017-->  <TYPE><![CDATA[M]]></TYPE>
+<!--402881052F009B08012F0142E6A50017-->  <LICENSE><![CDATA[Licensed under the Openbravo Public License Version 1.1.
+You may obtain a copy of the License at http://www.openbravo.com/legal/license.html or in the legal folder of the Openbravo ERP core distribution.]]></LICENSE>
+<!--402881052F009B08012F0142E6A50017-->  <JAVAPACKAGE><![CDATA[org.openbravo.b2bintegration.base]]></JAVAPACKAGE>
+<!--402881052F009B08012F0142E6A50017-->  <LICENSETYPE><![CDATA[OBPL]]></LICENSETYPE>
+<!--402881052F009B08012F0142E6A50017-->  <AUTHOR><![CDATA[J.Marcos Bernal
+<jmarcos.bernal@gmail.com>]]></AUTHOR>
+<!--402881052F009B08012F0142E6A50017-->  <ISTRANSLATIONREQUIRED><![CDATA[Y]]></ISTRANSLATIONREQUIRED>
+<!--402881052F009B08012F0142E6A50017-->  <AD_LANGUAGE><![CDATA[en_US]]></AD_LANGUAGE>
+<!--402881052F009B08012F0142E6A50017-->  <HASCHARTOFACCOUNTS><![CDATA[N]]></HASCHARTOFACCOUNTS>
+<!--402881052F009B08012F0142E6A50017-->  <ISTRANSLATIONMODULE><![CDATA[N]]></ISTRANSLATIONMODULE>
+<!--402881052F009B08012F0142E6A50017-->  <HASREFERENCEDATA><![CDATA[Y]]></HASREFERENCEDATA>
+<!--402881052F009B08012F0142E6A50017-->  <VERSION_LABEL><![CDATA[Beta]]></VERSION_LABEL>
+<!--402881052F009B08012F0142E6A50017-->  <ISCOMMERCIAL><![CDATA[N]]></ISCOMMERCIAL>
+<!--402881052F009B08012F0142E6A50017--></AD_MODULE>
+
+</data>

@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+  <database name="TRIGGER B2BPO_ISB2BORDER_TRG">
+    <trigger name="B2BPO_ISB2BORDER_TRG" table="C_ORDER" fires="before" insert="true" update="true" delete="false" foreach="row">
+      <body><![CDATA[
+    v_isb2bpodoc character(1);
+BEGIN
+    
+    IF AD_isTriggerEnabled()='N' THEN RETURN;
+    END IF;
+
+IF (INSERTING) THEN
+
+	select em_b2bpo_isb2bpodoc into v_isb2bpodoc from c_doctype where c_doctype_id=:new.c_doctypetarget_id;
+
+	IF (v_isb2bpodoc='Y')THEN
+		:new.em_b2bpo_orderstatus:='DR';
+		RETURN NEW;
+	END IF;
+	
+END IF;
+
+IF (UPDATING) THEN
+
+	select em_b2bpo_isb2bpodoc into v_isb2bpodoc from c_doctype where c_doctype_id=:new.c_doctypetarget_id;
+
+	IF (v_isb2bpodoc='Y' and :old.em_b2bpo_orderstatus='N/A')THEN
+		:new.em_b2bpo_orderstatus:='DR';
+		RETURN NEW;
+	ELSIF (v_isb2bpodoc='N' and :old.em_b2bpo_orderstatus='DR') THEN
+		:new.em_b2bpo_orderstatus:='N/A';
+		RETURN NEW;
+	END IF;
+	
+END IF;
+
+
+
+END B2BPO_ISB2BORDER_TRG
+]]></body>
+    </trigger>
+  </database>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+<!--402881002FD3DC09012FD40642C60064--><OBCQL_WIDGET_QUERY>
+<!--402881002FD3DC09012FD40642C60064-->  <OBCQL_WIDGET_QUERY_ID><![CDATA[402881002FD3DC09012FD40642C60064]]></OBCQL_WIDGET_QUERY_ID>
+<!--402881002FD3DC09012FD40642C60064-->  <AD_CLIENT_ID><![CDATA[0]]></AD_CLIENT_ID>
+<!--402881002FD3DC09012FD40642C60064-->  <AD_ORG_ID><![CDATA[0]]></AD_ORG_ID>
+<!--402881002FD3DC09012FD40642C60064-->  <ISACTIVE><![CDATA[Y]]></ISACTIVE>
+<!--402881002FD3DC09012FD40642C60064-->  <OBKMO_WIDGET_CLASS_ID><![CDATA[402881002FD3DC09012FD3F93AA4003B]]></OBKMO_WIDGET_CLASS_ID>
+<!--402881002FD3DC09012FD40642C60064-->  <HQL><![CDATA[select ord.documentNo as documentNo, ord.orderReference as orderReference,  ord.documentStatus as documentStatus, ord.orderDate as orderDate, ord.scheduledDeliveryDate as scheduledDeliveryDate, ord.description as description, ord.deliveryNotes as deliveryNotes, ord.warehouse.name as warehouse, ord.grandTotalAmount as grandTotalAmount, ord.currency.iSOCode as currency,
+ord.b2bpoOrderstatus as b2bpoOrderstatus, ord.b2BPOACKDate as b2BPOACKDate, ord.b2BPOPublishDate as b2BPOPublishDate, ord.b2bpoAcceptancedate as b2bpoAcceptancedate, ord.b2bpoAcceptancedeadline as b2bpoAcceptancedeadline,
+ord.id as orderId
+from Order as ord  where ord.salesTransaction is false and ord.businessPartner.id= :businessPartnerId
+order by ord.scheduledDeliveryDate desc]]></HQL>
+<!--402881002FD3DC09012FD40642C60064--></OBCQL_WIDGET_QUERY>
+
+<!--40288103303FAF1B01303FFE6D380070--><OBCQL_WIDGET_QUERY>
+<!--40288103303FAF1B01303FFE6D380070-->  <OBCQL_WIDGET_QUERY_ID><![CDATA[40288103303FAF1B01303FFE6D380070]]></OBCQL_WIDGET_QUERY_ID>
+<!--40288103303FAF1B01303FFE6D380070-->  <AD_CLIENT_ID><![CDATA[0]]></AD_CLIENT_ID>
+<!--40288103303FAF1B01303FFE6D380070-->  <AD_ORG_ID><![CDATA[0]]></AD_ORG_ID>
+<!--40288103303FAF1B01303FFE6D380070-->  <ISACTIVE><![CDATA[Y]]></ISACTIVE>
+<!--40288103303FAF1B01303FFE6D380070-->  <OBKMO_WIDGET_CLASS_ID><![CDATA[40288103303FAF1B01303FFBFA20006B]]></OBKMO_WIDGET_CLASS_ID>
+<!--40288103303FAF1B01303FFE6D380070-->  <HQL><![CDATA[select ord.documentNo as documentNo, ord.orderReference as orderReference,  ord.documentStatus as documentStatus, ord.orderDate as orderDate, ord.scheduledDeliveryDate as scheduledDeliveryDate, ord.description as description, ord.deliveryNotes as deliveryNotes, ord.warehouse.name as warehouse, ord.grandTotalAmount as grandTotalAmount, ord.currency.iSOCode as currency,
+ord.b2bpoOrderstatus as b2bpoOrderstatus, ord.b2BPOACKDate as b2BPOACKDate, ord.b2BPOPublishDate as b2BPOPublishDate, ord.b2bpoAcceptancedate as b2bpoAcceptancedate, ord.b2bpoAcceptancedeadline as b2bpoAcceptancedeadline,
+ord.id as orderId
+from Order as ord  where ord.salesTransaction is false and ord.businessPartner.id= :businessPartnerId and ord.b2bpoOrderstatus!='N/A'
+order by ord.scheduledDeliveryDate desc]]></HQL>
+<!--40288103303FAF1B01303FFE6D380070--></OBCQL_WIDGET_QUERY>
+
+<!--40288103303FAF1B0130402BC02200FA--><OBCQL_WIDGET_QUERY>
+<!--40288103303FAF1B0130402BC02200FA-->  <OBCQL_WIDGET_QUERY_ID><![CDATA[40288103303FAF1B0130402BC02200FA]]></OBCQL_WIDGET_QUERY_ID>
+<!--40288103303FAF1B0130402BC02200FA-->  <AD_CLIENT_ID><![CDATA[0]]></AD_CLIENT_ID>
+<!--40288103303FAF1B0130402BC02200FA-->  <AD_ORG_ID><![CDATA[0]]></AD_ORG_ID>
+<!--40288103303FAF1B0130402BC02200FA-->  <ISACTIVE><![CDATA[Y]]></ISACTIVE>
+<!--40288103303FAF1B0130402BC02200FA-->  <OBKMO_WIDGET_CLASS_ID><![CDATA[40288103303FAF1B0130401EE92200CC]]></OBKMO_WIDGET_CLASS_ID>
+<!--40288103303FAF1B0130402BC02200FA-->  <HQL><![CDATA[select stordet.storageBin.searchKey as BinName, stordet.product.name as ProductName,
+stordet.quantityOnHand as quantityOnHand, stordet.quantityInDraftTransactions as quantityInDraftTransactions,stordet.onHandOrderQuanity, stordet.quantityOrderInDraftTransactions as quantityOrderInDraftTransactions,
+stordet.product.b2bvmiStockmin as StockMin, stordet.product.b2bvmiResuplyqty as ResupplyQty, stordet.product.b2bvmiAutoresuply as AutoResupply,
+productprice.standardPrice as standardPrice, productprice.listPrice as listPrice,
+stordet.product.id as productId,
+stordet.storageBin.id as storagebinId,
+productprice.priceListVersion.id as pricelistversionId
+from MaterialMgmtStorageDetail as stordet,
+PricingProductPrice as productprice
+where stordet.product.b2bmdmVendor.id= :businessPartnerId
+and stordet.product.id=productprice.product.id
+and productprice.priceListVersion.priceList.id = stordet.product.b2bmdmVendor.purchasePricelist.id
+and productprice.priceListVersion.active is true]]></HQL>
+<!--40288103303FAF1B0130402BC02200FA--></OBCQL_WIDGET_QUERY>
+
+<!--402881062FE83943012FE8A071630055--><OBCQL_WIDGET_QUERY>
+<!--402881062FE83943012FE8A071630055-->  <OBCQL_WIDGET_QUERY_ID><![CDATA[402881062FE83943012FE8A071630055]]></OBCQL_WIDGET_QUERY_ID>
+<!--402881062FE83943012FE8A071630055-->  <AD_CLIENT_ID><![CDATA[0]]></AD_CLIENT_ID>
+<!--402881062FE83943012FE8A071630055-->  <AD_ORG_ID><![CDATA[0]]></AD_ORG_ID>
+<!--402881062FE83943012FE8A071630055-->  <ISACTIVE><![CDATA[Y]]></ISACTIVE>
+<!--402881062FE83943012FE8A071630055-->  <OBKMO_WIDGET_CLASS_ID><![CDATA[402881002FD3DC09012FD3FD6D40005C]]></OBKMO_WIDGET_CLASS_ID>
+<!--402881062FE83943012FE8A071630055-->  <HQL><![CDATA[select pay.documentNo as documentNo, pay.referenceNo as referenceNo,
+pay.paymentDate as paymentDate,
+ABS(pay.amount) as amount, pay.currency.iSOCode as currency,
+pay.paymentMethod.name as paymentMethod,
+pay.description as description,
+pay.b2bersAckstatus as ackStatus,
+pay.id as paymentId
+from FIN_Payment as pay
+where pay.processed is true and pay.receipt is false and pay.businessPartner.id = :businessPartnerId
+order by pay.paymentDate desc]]></HQL>
+<!--402881062FE83943012FE8A071630055--></OBCQL_WIDGET_QUERY>
+
+<!--402881072FE35145012FE366C3820011--><OBCQL_WIDGET_QUERY>
+<!--402881072FE35145012FE366C3820011-->  <OBCQL_WIDGET_QUERY_ID><![CDATA[402881072FE35145012FE366C3820011]]></OBCQL_WIDGET_QUERY_ID>
+<!--402881072FE35145012FE366C3820011-->  <AD_CLIENT_ID><![CDATA[0]]></AD_CLIENT_ID>
+<!--402881072FE35145012FE366C3820011-->  <AD_ORG_ID><![CDATA[0]]></AD_ORG_ID>
+<!--402881072FE35145012FE366C3820011-->  <ISACTIVE><![CDATA[Y]]></ISACTIVE>
+<!--402881072FE35145012FE366C3820011-->  <OBKMO_WIDGET_CLASS_ID><![CDATA[402881002FD3DC09012FD3FA79A20042]]></OBKMO_WIDGET_CLASS_ID>
+<!--402881072FE35145012FE366C3820011-->  <HQL><![CDATA[select ship.documentNo as documentNo, ship.orderReference as orderReference,  
+ship.documentStatus as documentStatus, 
+ship.movementDate as movementDate,
+ship.description as description,
+ship.warehouse.name as warehouse,
+ship.b2bvmiShippingdate as b2bvmiShippingdate,
+ship.b2bvmiShippingstatus as b2bvmiShippingstatus,
+ship.id as shipmentId
+from MaterialMgmtShipmentInOut as ship  
+where ship.salesTransaction is false and ship.businessPartner.id= :businessPartnerId
+order by ship.movementDate desc]]></HQL>
+<!--402881072FE35145012FE366C3820011--></OBCQL_WIDGET_QUERY>
+
+<!--402881072FE3B9B5012FE3BF736A0008--><OBCQL_WIDGET_QUERY>
+<!--402881072FE3B9B5012FE3BF736A0008-->  <OBCQL_WIDGET_QUERY_ID><![CDATA[402881072FE3B9B5012FE3BF736A0008]]></OBCQL_WIDGET_QUERY_ID>
+<!--402881072FE3B9B5012FE3BF736A0008-->  <AD_CLIENT_ID><![CDATA[0]]></AD_CLIENT_ID>
+<!--402881072FE3B9B5012FE3BF736A0008-->  <AD_ORG_ID><![CDATA[0]]></AD_ORG_ID>
+<!--402881072FE3B9B5012FE3BF736A0008-->  <ISACTIVE><![CDATA[Y]]></ISACTIVE>
+<!--402881072FE3B9B5012FE3BF736A0008-->  <OBKMO_WIDGET_CLASS_ID><![CDATA[402881002FD3DC09012FD3FCBE140057]]></OBKMO_WIDGET_CLASS_ID>
+<!--402881072FE3B9B5012FE3BF736A0008-->  <HQL><![CDATA[select inv.documentNo as documentNo, inv.orderReference as orderReference,
+inv.documentStatus as documentStatus,
+inv.invoiceDate as invoiceDate,
+inv.description as description,
+inv.paymentMethod.name as paymentMethod, inv.paymentTerms.name as paymentTerms,
+inv.grandTotalAmount as grandTotalAmount, inv.currency.iSOCode as currency,
+inv.paymentComplete as paymentComplete,inv.totalPaid as totalPaid,
+inv.dueAmount as dueAmount, inv.outstandingAmount as outstandingAmount,
+inv.daysTillDue as daysTillDue,
+inv.b2bersValidationstatus as validationStatus,
+inv.id as invoiceId
+from Invoice as inv
+where inv.salesTransaction is false and inv.businessPartner.id= :businessPartnerId
+order by inv.invoiceDate desc]]></HQL>
+<!--402881072FE3B9B5012FE3BF736A0008--></OBCQL_WIDGET_QUERY>
+
+<!--402881072FE3F44B012FE4A718F30051--><OBCQL_WIDGET_QUERY>
+<!--402881072FE3F44B012FE4A718F30051-->  <OBCQL_WIDGET_QUERY_ID><![CDATA[402881072FE3F44B012FE4A718F30051]]></OBCQL_WIDGET_QUERY_ID>
+<!--402881072FE3F44B012FE4A718F30051-->  <AD_CLIENT_ID><![CDATA[0]]></AD_CLIENT_ID>
+<!--402881072FE3F44B012FE4A718F30051-->  <AD_ORG_ID><![CDATA[0]]></AD_ORG_ID>
+<!--402881072FE3F44B012FE4A718F30051-->  <ISACTIVE><![CDATA[Y]]></ISACTIVE>
+<!--402881072FE3F44B012FE4A718F30051-->  <OBKMO_WIDGET_CLASS_ID><![CDATA[402881072FE3F44B012FE4A04569004A]]></OBKMO_WIDGET_CLASS_ID>
+<!--402881072FE3F44B012FE4A718F30051-->  <HQL><![CDATA[select inv.documentNo as documentNo, inv.orderReference as orderReference,
+inv.documentStatus as documentStatus,
+inv.invoiceDate as invoiceDate,
+inv.description as description,
+inv.paymentMethod.name as paymentMethod, inv.paymentTerms.name as paymentTerms,
+inv.grandTotalAmount as grandTotalAmount, inv.currency.iSOCode as currency,
+inv.paymentComplete as paymentComplete,inv.totalPaid as totalPaid,
+ABS(inv.dueAmount) as dueAmount, ABS(inv.outstandingAmount) as outstandingAmount,
+inv.daysTillDue as daysTillDue,
+inv.id as invoiceId
+from Invoice as inv
+where inv.salesTransaction is false and inv.paymentComplete is false and inv.businessPartner.id = :businessPartnerId
+order by inv.daysTillDue asc]]></HQL>
+<!--402881072FE3F44B012FE4A718F30051--></OBCQL_WIDGET_QUERY>
+
+</data>

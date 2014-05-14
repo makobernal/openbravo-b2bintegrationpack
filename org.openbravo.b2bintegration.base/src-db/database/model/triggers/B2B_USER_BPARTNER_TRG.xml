@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+  <database name="TRIGGER B2B_USER_BPARTNER_TRG">
+    <trigger name="B2B_USER_BPARTNER_TRG" table="AD_USER" fires="before" insert="true" update="true" delete="false" foreach="row">
+      <body><![CDATA[ 
+
+ 
+BEGIN
+    
+    IF AD_isTriggerEnabled()='N' THEN RETURN;
+   END IF;
+    
+	IF(INSERTING OR UPDATING) THEN
+		:NEW.em_b2b_bpartnerid:=:NEW.c_bpartner_id;
+	END IF;
+
+  IF DELETING THEN RETURN OLD; ELSE RETURN NEW; END IF;
+ END B2B_USER_BPARTNER_TRG
+]]></body>
+    </trigger>
+  </database>

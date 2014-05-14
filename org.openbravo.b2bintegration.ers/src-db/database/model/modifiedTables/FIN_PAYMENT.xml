@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+  <database name="MODIFIED TABLE FIN_PAYMENT">
+    <table name="FIN_PAYMENT" primaryKey="FIN_PAYMENT_KEY">
+      <column name="EM_B2BERS_ACKSTATUS" primaryKey="false" required="true" type="VARCHAR" size="60" autoIncrement="false">
+        <default><![CDATA[N/A]]></default>
+        <onCreateDefault/>
+      </column>
+      <column name="EM_B2BERS_ACKPAYMENT" primaryKey="false" required="false" type="CHAR" size="1" autoIncrement="false">
+        <default><![CDATA[N]]></default>
+        <onCreateDefault/>
+      </column>
+    </table>
+  </database>

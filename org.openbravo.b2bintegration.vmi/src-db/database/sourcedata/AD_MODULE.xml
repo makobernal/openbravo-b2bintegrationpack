@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+<!--402881012FFF2D6A012FFF3081200009--><AD_MODULE>
+<!--402881012FFF2D6A012FFF3081200009-->  <AD_MODULE_ID><![CDATA[402881012FFF2D6A012FFF3081200009]]></AD_MODULE_ID>
+<!--402881012FFF2D6A012FFF3081200009-->  <AD_CLIENT_ID><![CDATA[0]]></AD_CLIENT_ID>
+<!--402881012FFF2D6A012FFF3081200009-->  <AD_ORG_ID><![CDATA[0]]></AD_ORG_ID>
+<!--402881012FFF2D6A012FFF3081200009-->  <ISACTIVE><![CDATA[Y]]></ISACTIVE>
+<!--402881012FFF2D6A012FFF3081200009-->  <NAME><![CDATA[B2B Integration - Vendor Managed Inventory]]></NAME>
+<!--402881012FFF2D6A012FFF3081200009-->  <VERSION><![CDATA[1.0.0]]></VERSION>
+<!--402881012FFF2D6A012FFF3081200009-->  <DESCRIPTION><![CDATA[This module provides the functionality to engage in VMI (Vendor Managed Inventory)]]></DESCRIPTION>
+<!--402881012FFF2D6A012FFF3081200009-->  <HELP><![CDATA[This module allows for Vendors to control their Products in shared or vendor managed warehouses. Vendors will receive notifications when a product is close or beyond their minimum stock, and they can automatically create shipments from a list of under-supplied products. A shipment can now be created by Vendors so that it is tracked from the moments the goods are dispatched (Advanced Shipment Notice), and the Supply Chain Manager can notifiy the Vendor when the shipment arrives.]]></HELP>
+<!--402881012FFF2D6A012FFF3081200009-->  <URL><![CDATA[http://forge.openbravo.com/projects/b2bintegration]]></URL>
+<!--402881012FFF2D6A012FFF3081200009-->  <TYPE><![CDATA[M]]></TYPE>
+<!--402881012FFF2D6A012FFF3081200009-->  <LICENSE><![CDATA[Licensed under the Openbravo Public License Version 1.1.
+You may obtain a copy of the License at http://www.openbravo.com/legal/license.html or in the legal folder of the Openbravo ERP core distribution.]]></LICENSE>
+<!--402881012FFF2D6A012FFF3081200009-->  <JAVAPACKAGE><![CDATA[org.openbravo.b2bintegration.vmi]]></JAVAPACKAGE>
+<!--402881012FFF2D6A012FFF3081200009-->  <LICENSETYPE><![CDATA[OBPL]]></LICENSETYPE>
+<!--402881012FFF2D6A012FFF3081200009-->  <AUTHOR><![CDATA[J.Marcos Bernal
+<jmarcos.bernal@gmail.com>]]></AUTHOR>
+<!--402881012FFF2D6A012FFF3081200009-->  <ISTRANSLATIONREQUIRED><![CDATA[Y]]></ISTRANSLATIONREQUIRED>
+<!--402881012FFF2D6A012FFF3081200009-->  <AD_LANGUAGE><![CDATA[en_US]]></AD_LANGUAGE>
+<!--402881012FFF2D6A012FFF3081200009-->  <HASCHARTOFACCOUNTS><![CDATA[N]]></HASCHARTOFACCOUNTS>
+<!--402881012FFF2D6A012FFF3081200009-->  <ISTRANSLATIONMODULE><![CDATA[N]]></ISTRANSLATIONMODULE>
+<!--402881012FFF2D6A012FFF3081200009-->  <HASREFERENCEDATA><![CDATA[N]]></HASREFERENCEDATA>
+<!--402881012FFF2D6A012FFF3081200009-->  <VERSION_LABEL><![CDATA[Beta]]></VERSION_LABEL>
+<!--402881012FFF2D6A012FFF3081200009-->  <ISCOMMERCIAL><![CDATA[N]]></ISCOMMERCIAL>
+<!--402881012FFF2D6A012FFF3081200009--></AD_MODULE>
+
+</data>

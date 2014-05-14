@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+  <database name="MODIFIED TABLE AD_TABLE">
+    <table name="AD_TABLE" primaryKey="AD_TABLE_KEY">
+      <column name="EM_B2B_B2BTAB_ID" primaryKey="false" required="false" type="VARCHAR" size="32" autoIncrement="false">
+        <default/>
+        <onCreateDefault/>
+      </column>
+    </table>
+  </database>

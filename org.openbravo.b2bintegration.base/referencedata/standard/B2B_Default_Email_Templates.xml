@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ob:Openbravo xmlns:ob="http://www.openbravo.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <B2B_Emailtemplate id="402881062FFCD095012FFCEE0BF80066" identifier="AddVendorPortalPrivilegesToContact-ToVendor">
+    <id>402881062FFCD095012FFCEE0BF80066</id>
+    <active>true</active>
+    <creationDate transient="true">2011-05-17T09:49:09.752Z</creationDate>
+    <createdBy transient="true" id="100" entity-name="ADUser" identifier="Openbravo"/>
+    <updated transient="true">2011-05-17T09:49:09.752Z</updated>
+    <updatedBy transient="true" id="100" entity-name="ADUser" identifier="Openbravo"/>
+    <languageID id="192" entity-name="ADLanguage" identifier="English (USA)"/>
+    <searchKey>AddVendorPortalPrivilegesToContact-ToVendor</searchKey>
+    <emailsubject>Your access details to @B2BPortalName@</emailsubject>
+    <templatefilepath>@base_web@/org.openbravo.b2bintegration.base/emailtemplates/wizards/AddVendorPortalPrivilegesToContact-ToVendor.html</templatefilepath>
+  </B2B_Emailtemplate>
+  <B2B_Emailtemplate id="402881062FFCD095012FFCF12CE80068" identifier="AddVendorPortalPrivilegesToContact-ToSCM">
+    <id>402881062FFCD095012FFCF12CE80068</id>
+    <active>true</active>
+    <creationDate transient="true">2011-05-17T09:52:34.792Z</creationDate>
+    <createdBy transient="true" id="100" entity-name="ADUser" identifier="Openbravo"/>
+    <updated transient="true">2011-05-17T09:53:38.473Z</updated>
+    <updatedBy transient="true" id="100" entity-name="ADUser" identifier="Openbravo"/>
+    <languageID id="192" entity-name="ADLanguage" identifier="English (USA)"/>
+    <searchKey>AddVendorPortalPrivilegesToContact-ToSCM</searchKey>
+    <emailsubject>@Name_of_User@ has been granted access to @B2BPortalName@</emailsubject>
+    <templatefilepath>@base_web@/org.openbravo.b2bintegration.base/emailtemplates/wizards/AddVendorPortalPrivilegesToContact-ToSCM.html</templatefilepath>
+  </B2B_Emailtemplate>
+</ob:Openbravo>

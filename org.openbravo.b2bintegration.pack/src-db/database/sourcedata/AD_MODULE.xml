@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+<!--402881033040CC4F0130412407FC0037--><AD_MODULE>
+<!--402881033040CC4F0130412407FC0037-->  <AD_MODULE_ID><![CDATA[402881033040CC4F0130412407FC0037]]></AD_MODULE_ID>
+<!--402881033040CC4F0130412407FC0037-->  <AD_CLIENT_ID><![CDATA[0]]></AD_CLIENT_ID>
+<!--402881033040CC4F0130412407FC0037-->  <AD_ORG_ID><![CDATA[0]]></AD_ORG_ID>
+<!--402881033040CC4F0130412407FC0037-->  <ISACTIVE><![CDATA[Y]]></ISACTIVE>
+<!--402881033040CC4F0130412407FC0037-->  <NAME><![CDATA[B2B Integration Pack]]></NAME>
+<!--402881033040CC4F0130412407FC0037-->  <VERSION><![CDATA[1.0.1]]></VERSION>
+<!--402881033040CC4F0130412407FC0037-->  <DESCRIPTION><![CDATA[The B2B Integration framework is a collection of interdependent modules that provide several B2B Integration capabilities to Openbravo, such as Shared Masterdata, B2B PO Management, Vendor Managed Inventory and Evaluated Receipt Settlement]]></DESCRIPTION>
+<!--402881033040CC4F0130412407FC0037-->  <HELP><![CDATA[This pack will always provide the latest version of the B2B Integration Framework, including all core modules. This should be the base standalone module, and extensions should always be dependent on this module. Furthermore, the B2B Integration Framework versioning should always follow that of this module.]]></HELP>
+<!--402881033040CC4F0130412407FC0037-->  <URL><![CDATA[http://forge.openbravo.com/projects/b2bintegration]]></URL>
+<!--402881033040CC4F0130412407FC0037-->  <TYPE><![CDATA[P]]></TYPE>
+<!--402881033040CC4F0130412407FC0037-->  <LICENSE><![CDATA[Licensed under the Openbravo Public License Version 1.1.
+You may obtain a copy of the License at http://www.openbravo.com/legal/license.html or in the legal folder of the Openbravo ERP core distribution.]]></LICENSE>
+<!--402881033040CC4F0130412407FC0037-->  <JAVAPACKAGE><![CDATA[org.openbravo.b2bintegration.pack]]></JAVAPACKAGE>
+<!--402881033040CC4F0130412407FC0037-->  <LICENSETYPE><![CDATA[OBPL]]></LICENSETYPE>
+<!--402881033040CC4F0130412407FC0037-->  <AUTHOR><![CDATA[J.Marcos Bernal
+<jmarcos.bernal@gmail.com>]]></AUTHOR>
+<!--402881033040CC4F0130412407FC0037-->  <ISTRANSLATIONREQUIRED><![CDATA[N]]></ISTRANSLATIONREQUIRED>
+<!--402881033040CC4F0130412407FC0037-->  <AD_LANGUAGE><![CDATA[en_US]]></AD_LANGUAGE>
+<!--402881033040CC4F0130412407FC0037-->  <HASCHARTOFACCOUNTS><![CDATA[N]]></HASCHARTOFACCOUNTS>
+<!--402881033040CC4F0130412407FC0037-->  <ISTRANSLATIONMODULE><![CDATA[N]]></ISTRANSLATIONMODULE>
+<!--402881033040CC4F0130412407FC0037-->  <HASREFERENCEDATA><![CDATA[N]]></HASREFERENCEDATA>
+<!--402881033040CC4F0130412407FC0037-->  <UPDATEINFO><![CDATA[Corrected Inclusion of CKeditor Version]]></UPDATEINFO>
+<!--402881033040CC4F0130412407FC0037-->  <VERSION_LABEL><![CDATA[Beta]]></VERSION_LABEL>
+<!--402881033040CC4F0130412407FC0037-->  <ISCOMMERCIAL><![CDATA[N]]></ISCOMMERCIAL>
+<!--402881033040CC4F0130412407FC0037--></AD_MODULE>
+
+</data>

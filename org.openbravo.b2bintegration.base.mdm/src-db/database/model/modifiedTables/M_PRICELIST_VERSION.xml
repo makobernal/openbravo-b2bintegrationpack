@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+  <database name="MODIFIED TABLE M_PRICELIST_VERSION">
+    <table name="M_PRICELIST_VERSION" primaryKey="M_PRICELIST_VERSION_KEY">
+      <column name="EM_B2BMDM_VALIDTO" primaryKey="false" required="false" type="TIMESTAMP" size="7" autoIncrement="false">
+        <default><![CDATA[SYSDATE]]></default>
+        <onCreateDefault/>
+      </column>
+      <column name="EM_B2BMDM_COPYPRICELIST" primaryKey="false" required="false" type="CHAR" size="1" autoIncrement="false">
+        <default><![CDATA[N]]></default>
+        <onCreateDefault/>
+      </column>
+    </table>
+  </database>

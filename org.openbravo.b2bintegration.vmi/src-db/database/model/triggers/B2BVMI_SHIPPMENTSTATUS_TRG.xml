@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+  <database name="TRIGGER B2BVMI_SHIPPMENTSTATUS_TRG">
+    <trigger name="B2BVMI_SHIPPMENTSTATUS_TRG" table="M_INOUT" fires="before" insert="true" update="true" delete="false" foreach="row">
+      <body><![CDATA[
+    V_COUNT NUMBER;
+BEGIN
+    
+    IF AD_isTriggerEnabled()='N' THEN RETURN;
+    END IF;
+
+IF UPDATING THEN
+
+-- If changing dispatch status
+	IF (:new.em_b2bvmi_shipmentdispatched='Y' and :old.em_b2bvmi_shipmentdispatched='N') THEN
+		IF (:new.em_b2bvmi_shipmentarrived='N')THEN
+			:new.em_b2bvmi_shippingstatus:='ER';
+			RETURN NEW;
+		END IF;
+	ELSIF (:new.em_b2bvmi_shipmentdispatched='N' and :old.em_b2bvmi_shipmentdispatched='Y') THEN
+		IF (:new.em_b2bvmi_shipmentarrived='Y')THEN
+			:new.em_b2bvmi_shipmentdispatched:='Y';
+			RETURN NEW;
+		ELSE 
+			:new.em_b2bvmi_shippingstatus:='DR';
+			RETURN NEW;
+		END IF;
+
+	END IF;
+
+-- if changing arrival status
+	IF (:new.em_b2bvmi_shipmentarrived='Y' and :old.em_b2bvmi_shipmentarrived='N') THEN
+		:new.em_b2bvmi_shippingstatus:='SA';
+		RETURN NEW;
+	ELSIF (:new.em_b2bvmi_shipmentarrived='N' and :old.em_b2bvmi_shipmentarrived='Y') THEN
+		IF (:new.em_b2bvmi_shipmentdispatched='Y')THEN
+			:new.em_b2bvmi_shippingstatus:='ER';
+			RETURN NEW;
+		ELSE
+			:new.em_b2bvmi_shippingstatus:='DR';
+			RETURN NEW;
+		END IF;
+	END IF;
+
+	
+
+END IF;
+
+
+
+END B2BVMI_SHIPPMENTSTATUS_TRG
+]]></body>
+    </trigger>
+  </database>

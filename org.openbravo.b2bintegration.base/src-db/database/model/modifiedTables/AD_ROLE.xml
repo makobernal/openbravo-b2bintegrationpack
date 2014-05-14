@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+  <database name="MODIFIED TABLE AD_ROLE">
+    <table name="AD_ROLE" primaryKey="AD_ROLE_KEY">
+      <column name="EM_B2B_ISSUPPLYCHAINMANAGER" primaryKey="false" required="false" type="CHAR" size="1" autoIncrement="false">
+        <default/>
+        <onCreateDefault/>
+      </column>
+      <column name="EM_B2B_ISVENDORB2BCONTACT" primaryKey="false" required="false" type="CHAR" size="1" autoIncrement="false">
+        <default/>
+        <onCreateDefault/>
+      </column>
+    </table>
+  </database>

@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ob:Openbravo xmlns:ob="http://www.openbravo.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <ADRole id="402881072F1169CF012F1170499F0018" identifier="Supply Chain Manager">
+    <b2BIsSupplyChainManager>true</b2BIsSupplyChainManager>
+    <id>402881072F1169CF012F1170499F0018</id>
+    <active>true</active>
+    <creationDate transient="true">2011-05-17T09:31:05.412Z</creationDate>
+    <createdBy transient="true" id="100" entity-name="ADUser" identifier="Openbravo"/>
+    <updated transient="true">2011-05-17T09:31:05.412Z</updated>
+    <name>Supply Chain Manager</name>
+    <updatedBy transient="true" id="100" entity-name="ADUser" identifier="Openbravo"/>
+    <description>An employee of the organization whose task is to manage suppliers / vendors related to the B2B Integration module.</description>
+    <userLevel> CO</userLevel>
+    <clientList>4028E6C72959682B01295A070852010D</clientList>
+    <organizationList>0,357947E87C284935AD1D783CF6F099A1</organizationList>
+    <currency xsi:nil="true"/>
+    <approvalAmount>0</approvalAmount>
+    <primaryTreeMenu xsi:nil="true"/>
+    <manual>true</manual>
+    <processNow>false</processNow>
+    <clientAdmin>false</clientAdmin>
+    <b2BIsVendorB2BContact>false</b2BIsVendorB2BContact>
+  </ADRole>
+  <ADRole id="402881072F1169CF012F11749FDB0032" identifier="Vendor B2B Contact">
+    <b2BIsSupplyChainManager>false</b2BIsSupplyChainManager>
+    <id>402881072F1169CF012F11749FDB0032</id>
+    <active>true</active>
+    <creationDate transient="true">2011-05-17T09:31:05.411Z</creationDate>
+    <createdBy transient="true" id="100" entity-name="ADUser" identifier="Openbravo"/>
+    <updated transient="true">2011-05-17T09:31:05.411Z</updated>
+    <name>Vendor B2B Contact</name>
+    <updatedBy transient="true" id="100" entity-name="ADUser" identifier="Openbravo"/>
+    <description>A supplier's contact which is in charge of the B2B Integration processes and has access to the Supplier Portal part of the ERP</description>
+    <userLevel> CO</userLevel>
+    <clientList>4028E6C72959682B01295A070852010D</clientList>
+    <organizationList>0,357947E87C284935AD1D783CF6F099A1</organizationList>
+    <currency xsi:nil="true"/>
+    <approvalAmount>0</approvalAmount>
+    <primaryTreeMenu xsi:nil="true"/>
+    <manual>true</manual>
+    <processNow>false</processNow>
+    <clientAdmin>false</clientAdmin>
+    <b2BIsVendorB2BContact>true</b2BIsVendorB2BContact>
+  </ADRole>
+  <ADFormAccess id="40288104301BE43201301C56471B00AD" identifier="Pending Goods Receipts - Supply Chain Manager">
+    <id>40288104301BE43201301C56471B00AD</id>
+    <specialForm id="800009" entity-name="ADForm" identifier="Pending Goods Receipts"/>
+    <role id="402881072F1169CF012F1170499F0018" entity-name="ADRole" identifier="Supply Chain Manager"/>
+    <active>true</active>
+    <creationDate transient="true">2011-05-23T12:11:14.331Z</creationDate>
+    <createdBy transient="true" id="100" entity-name="ADUser" identifier="Openbravo"/>
+    <updated transient="true">2011-05-23T12:11:14.331Z</updated>
+    <updatedBy transient="true" id="100" entity-name="ADUser" identifier="Openbravo"/>
+    <editableField>false</editableField>
+  </ADFormAccess>
+  <ADWindowAccess id="402881003017F26001301819315A0045" identifier="B2B Activity Log - Supply Chain Manager">
+    <id>402881003017F26001301819315A0045</id>
+    <window id="402881003016FF62013017146946004C" entity-name="ADWindow" identifier="B2B Activity Log"/>
+    <role id="402881072F1169CF012F1170499F0018" entity-name="ADRole" identifier="Supply Chain Manager"/>
+    <active>true</active>
+    <creationDate transient="true">2011-05-22T16:26:02.203Z</creationDate>
+    <createdBy transient="true" id="100" entity-name="ADUser" identifier="Openbravo"/>
+    <updated transient="true">2011-05-22T16:26:02.203Z</updated>
+    <updatedBy transient="true" id="100" entity-name="ADUser" identifier="Openbravo"/>
+    <editableField>true</editableField>
+  </ADWindowAccess>
+  <ADWindowAccess id="402881003017F2600130181999BD004A" identifier="B2B Email Templates - Supply Chain Manager">
+    <id>402881003017F2600130181999BD004A</id>
+    <window id="402881012F5512A6012F5549C2690058" entity-name="ADWindow" identifier="B2B Email Templates"/>
+    <role id="402881072F1169CF012F1170499F0018" entity-name="ADRole" identifier="Supply Chain Manager"/>
+    <active>true</active>
+    <creationDate transient="true">2011-05-22T16:26:28.926Z</creationDate>
+    <createdBy transient="true" id="100" entity-name="ADUser" identifier="Openbravo"/>
+    <updated transient="true">2011-05-22T16:26:28.926Z</updated>
+    <updatedBy transient="true" id="100" entity-name="ADUser" identifier="Openbravo"/>
+    <editableField>true</editableField>
+  </ADWindowAccess>
+  <ADWindowAccess id="402881003017F26001301819CBBB004E" identifier="B2B Global Parameters - Supply Chain Manager">
+    <id>402881003017F26001301819CBBB004E</id>
+    <window id="402881062F5830B8012F58612B160021" entity-name="ADWindow" identifier="B2B Global Parameters"/>
+    <role id="402881072F1169CF012F1170499F0018" entity-name="ADRole" identifier="Supply Chain Manager"/>
+    <active>true</active>
+    <creationDate transient="true">2011-05-22T16:26:41.723Z</creationDate>
+    <createdBy transient="true" id="100" entity-name="ADUser" identifier="Openbravo"/>
+    <updated transient="true">2011-05-22T16:26:41.723Z</updated>
+    <updatedBy transient="true" id="100" entity-name="ADUser" identifier="Openbravo"/>
+    <editableField>true</editableField>
+  </ADWindowAccess>
+  <ADWindowAccess id="402881003017F26001301819F5700052" identifier="B2B Vendor Parameters - Supply Chain Manager">
+    <id>402881003017F26001301819F5700052</id>
+    <window id="402881012F548699012F54B9E4C4002A" entity-name="ADWindow" identifier="B2B Vendor Parameters"/>
+    <role id="402881072F1169CF012F1170499F0018" entity-name="ADRole" identifier="Supply Chain Manager"/>
+    <active>true</active>
+    <creationDate transient="true">2011-05-22T16:26:52.400Z</creationDate>
+    <createdBy transient="true" id="100" entity-name="ADUser" identifier="Openbravo"/>
+    <updated transient="true">2011-05-22T16:26:52.400Z</updated>
+    <updatedBy transient="true" id="100" entity-name="ADUser" identifier="Openbravo"/>
+    <editableField>true</editableField>
+  </ADWindowAccess>
+  <ADWindowAccess id="402881003017F2600130181A167A0056" identifier="B2B Organization Parameters - Supply Chain Manager">
+    <id>402881003017F2600130181A167A0056</id>
+    <window id="402881002F4F9184012F4FA00EC6001A" entity-name="ADWindow" identifier="B2B Organization Parameters"/>
+    <role id="402881072F1169CF012F1170499F0018" entity-name="ADRole" identifier="Supply Chain Manager"/>
+    <active>true</active>
+    <creationDate transient="true">2011-05-22T16:27:00.859Z</creationDate>
+    <createdBy transient="true" id="100" entity-name="ADUser" identifier="Openbravo"/>
+    <updated transient="true">2011-05-22T16:27:00.859Z</updated>
+    <updatedBy transient="true" id="100" entity-name="ADUser" identifier="Openbravo"/>
+    <editableField>true</editableField>
+  </ADWindowAccess>
+  <ADWindowAccess id="402881003017F2600130181A53A3005A" identifier="Business Partner - Supply Chain Manager">
+    <id>402881003017F2600130181A53A3005A</id>
+    <window id="123" entity-name="ADWindow" identifier="Business Partner"/>
+    <role id="402881072F1169CF012F1170499F0018" entity-name="ADRole" identifier="Supply Chain Manager"/>
+    <active>true</active>
+    <creationDate transient="true">2011-05-22T16:27:16.516Z</creationDate>
+    <createdBy transient="true" id="100" entity-name="ADUser" identifier="Openbravo"/>
+    <updated transient="true">2011-05-22T16:27:16.516Z</updated>
+    <updatedBy transient="true" id="100" entity-name="ADUser" identifier="Openbravo"/>
+    <editableField>true</editableField>
+  </ADWindowAccess>
+  <ADWindowAccess id="402881003017F2600130181A83F8005E" identifier="Product - Supply Chain Manager">
+    <id>402881003017F2600130181A83F8005E</id>
+    <window id="140" entity-name="ADWindow" identifier="Product"/>
+    <role id="402881072F1169CF012F1170499F0018" entity-name="ADRole" identifier="Supply Chain Manager"/>
+    <active>true</active>
+    <creationDate transient="true">2011-05-22T16:27:28.888Z</creationDate>
+    <createdBy transient="true" id="100" entity-name="ADUser" identifier="Openbravo"/>
+    <updated transient="true">2011-05-22T16:27:35.872Z</updated>
+    <updatedBy transient="true" id="100" entity-name="ADUser" identifier="Openbravo"/>
+    <editableField>true</editableField>
+  </ADWindowAccess>
+  <ADWindowAccess id="402881003017F2600130181C72F9006D" identifier="Sent Emails Monitor - Supply Chain Manager">
+    <id>402881003017F2600130181C72F9006D</id>
+    <window id="402881062F9C7239012F9C78F2500006" entity-name="ADWindow" identifier="Sent Emails Monitor"/>
+    <role id="402881072F1169CF012F1170499F0018" entity-name="ADRole" identifier="Supply Chain Manager"/>
+    <active>true</active>
+    <creationDate transient="true">2011-05-22T16:29:35.609Z</creationDate>
+    <createdBy transient="true" id="100" entity-name="ADUser" identifier="Openbravo"/>
+    <updated transient="true">2011-05-27T13:56:47.550Z</updated>
+    <updatedBy transient="true" id="100" entity-name="ADUser" identifier="Openbravo"/>
+    <editableField>true</editableField>
+  </ADWindowAccess>
+  <ADWindowAccess id="402881003017F2600130181D31D20071" identifier="Price List - Supply Chain Manager">
+    <id>402881003017F2600130181D31D20071</id>
+    <window id="146" entity-name="ADWindow" identifier="Price List"/>
+    <role id="402881072F1169CF012F1170499F0018" entity-name="ADRole" identifier="Supply Chain Manager"/>
+    <active>true</active>
+    <creationDate transient="true">2011-05-22T16:30:24.466Z</creationDate>
+    <createdBy transient="true" id="100" entity-name="ADUser" identifier="Openbravo"/>
+    <updated transient="true">2011-05-22T16:30:24.466Z</updated>
+    <updatedBy transient="true" id="100" entity-name="ADUser" identifier="Openbravo"/>
+    <editableField>true</editableField>
+  </ADWindowAccess>
+  <ADWindowAccess id="402881003017F2600130181D55770075" identifier="Price List Schema - Supply Chain Manager">
+    <id>402881003017F2600130181D55770075</id>
+    <window id="233" entity-name="ADWindow" identifier="Price List Schema"/>
+    <role id="402881072F1169CF012F1170499F0018" entity-name="ADRole" identifier="Supply Chain Manager"/>
+    <active>true</active>
+    <creationDate transient="true">2011-05-22T16:30:33.591Z</creationDate>
+    <createdBy transient="true" id="100" entity-name="ADUser" identifier="Openbravo"/>
+    <updated transient="true">2011-05-22T16:30:33.591Z</updated>
+    <updatedBy transient="true" id="100" entity-name="ADUser" identifier="Openbravo"/>
+    <editableField>true</editableField>
+  </ADWindowAccess>
+  <ADWindowAccess id="402881003017F2600130181DAA6E0079" identifier="Price Adjustments - Supply Chain Manager">
+    <id>402881003017F2600130181DAA6E0079</id>
+    <window id="800028" entity-name="ADWindow" identifier="Price Adjustments"/>
+    <role id="402881072F1169CF012F1170499F0018" entity-name="ADRole" identifier="Supply Chain Manager"/>
+    <active>true</active>
+    <creationDate transient="true">2011-05-22T16:30:55.342Z</creationDate>
+    <createdBy transient="true" id="100" entity-name="ADUser" identifier="Openbravo"/>
+    <updated transient="true">2011-05-27T13:56:40.459Z</updated>
+    <updatedBy transient="true" id="100" entity-name="ADUser" identifier="Openbravo"/>
+    <editableField>true</editableField>
+  </ADWindowAccess>
+  <ADWindowAccess id="4028810130045DA201300467FCEE0037" identifier="My Payments - Vendor B2B Contact">
+    <id>4028810130045DA201300467FCEE0037</id>
+    <window id="4028810130045DA20130046563FF001D" entity-name="ADWindow" identifier="My Payments"/>
+    <role id="402881072F1169CF012F11749FDB0032" entity-name="ADRole" identifier="Vendor B2B Contact"/>
+    <active>true</active>
+    <creationDate transient="true">2011-05-18T20:39:41.807Z</creationDate>
+    <createdBy transient="true" id="100" entity-name="ADUser" identifier="Openbravo"/>
+    <updated transient="true">2011-05-18T20:39:41.807Z</updated>
+    <updatedBy transient="true" id="100" entity-name="ADUser" identifier="Openbravo"/>
+    <editableField>true</editableField>
+  </ADWindowAccess>
+  <ADWindowAccess id="402881023008DD20013008E0EF5B000B" identifier="My Shipments - Vendor B2B Contact">
+    <id>402881023008DD20013008E0EF5B000B</id>
+    <window id="402881023008ACA9013008AEACED0004" entity-name="ADWindow" identifier="My Shipments"/>
+    <role id="402881072F1169CF012F11749FDB0032" entity-name="ADRole" identifier="Vendor B2B Contact"/>
+    <active>true</active>
+    <creationDate transient="true">2011-05-19T17:30:17.51Z</creationDate>
+    <createdBy transient="true" id="100" entity-name="ADUser" identifier="Openbravo"/>
+    <updated transient="true">2011-05-19T17:30:17.51Z</updated>
+    <updatedBy transient="true" id="100" entity-name="ADUser" identifier="Openbravo"/>
+    <editableField>true</editableField>
+  </ADWindowAccess>
+  <ADWindowAccess id="40288104301BE43201301C543B1C0093" identifier="Matched Purchase Orders - Supply Chain Manager">
+    <id>40288104301BE43201301C543B1C0093</id>
+    <window id="228" entity-name="ADWindow" identifier="Matched Purchase Orders"/>
+    <role id="402881072F1169CF012F1170499F0018" entity-name="ADRole" identifier="Supply Chain Manager"/>
+    <active>true</active>
+    <creationDate transient="true">2011-05-23T12:09:00.189Z</creationDate>
+    <createdBy transient="true" id="100" entity-name="ADUser" identifier="Openbravo"/>
+    <updated transient="true">2011-05-23T12:09:00.189Z</updated>
+    <updatedBy transient="true" id="100" entity-name="ADUser" identifier="Openbravo"/>
+    <editableField>true</editableField>
+  </ADWindowAccess>
+  <ADWindowAccess id="40288104301BE43201301C548AD30096" identifier="Purchase Order - Supply Chain Manager">
+    <id>40288104301BE43201301C548AD30096</id>
+    <window id="181" entity-name="ADWindow" identifier="Purchase Order"/>
+    <role id="402881072F1169CF012F1170499F0018" entity-name="ADRole" identifier="Supply Chain Manager"/>
+    <active>true</active>
+    <creationDate transient="true">2011-05-23T12:09:20.595Z</creationDate>
+    <createdBy transient="true" id="100" entity-name="ADUser" identifier="Openbravo"/>
+    <updated transient="true">2011-05-23T12:09:20.595Z</updated>
+    <updatedBy transient="true" id="100" entity-name="ADUser" identifier="Openbravo"/>
+    <editableField>true</editableField>
+  </ADWindowAccess>
+  <ADWindowAccess id="40288104301BE43201301C54A9AB0099" identifier="Purchase Invoice - Supply Chain Manager">
+    <id>40288104301BE43201301C54A9AB0099</id>
+    <window id="183" entity-name="ADWindow" identifier="Purchase Invoice"/>
+    <role id="402881072F1169CF012F1170499F0018" entity-name="ADRole" identifier="Supply Chain Manager"/>
+    <active>true</active>
+    <creationDate transient="true">2011-05-23T12:09:28.491Z</creationDate>
+    <createdBy transient="true" id="100" entity-name="ADUser" identifier="Openbravo"/>
+    <updated transient="true">2011-05-27T13:56:43.892Z</updated>
+    <updatedBy transient="true" id="100" entity-name="ADUser" identifier="Openbravo"/>
+    <editableField>true</editableField>
+  </ADWindowAccess>
+  <ADWindowAccess id="40288104301BE43201301C54D036009C" identifier="Matched Invoices - Supply Chain Manager">
+    <id>40288104301BE43201301C54D036009C</id>
+    <window id="107" entity-name="ADWindow" identifier="Matched Invoices"/>
+    <role id="402881072F1169CF012F1170499F0018" entity-name="ADRole" identifier="Supply Chain Manager"/>
+    <active>true</active>
+    <creationDate transient="true">2011-05-23T12:09:38.358Z</creationDate>
+    <createdBy transient="true" id="100" entity-name="ADUser" identifier="Openbravo"/>
+    <updated transient="true">2011-05-27T13:56:38.192Z</updated>
+    <updatedBy transient="true" id="100" entity-name="ADUser" identifier="Openbravo"/>
+    <editableField>true</editableField>
+  </ADWindowAccess>
+  <ADWindowAccess id="40288104301BE43201301C56028600A9" identifier="Goods Receipt - Supply Chain Manager">
+    <id>40288104301BE43201301C56028600A9</id>
+    <window id="184" entity-name="ADWindow" identifier="Goods Receipt"/>
+    <role id="402881072F1169CF012F1170499F0018" entity-name="ADRole" identifier="Supply Chain Manager"/>
+    <active>true</active>
+    <creationDate transient="true">2011-05-23T12:10:56.774Z</creationDate>
+    <createdBy transient="true" id="100" entity-name="ADUser" identifier="Openbravo"/>
+    <updated transient="true">2011-05-27T13:56:32.502Z</updated>
+    <updatedBy transient="true" id="100" entity-name="ADUser" identifier="Openbravo"/>
+    <editableField>true</editableField>
+  </ADWindowAccess>
+  <ADWindowAccess id="40288104301C5E3101301C66D5300026" identifier="Document Type - Supply Chain Manager">
+    <id>40288104301C5E3101301C66D5300026</id>
+    <window id="135" entity-name="ADWindow" identifier="Document Type"/>
+    <role id="402881072F1169CF012F1170499F0018" entity-name="ADRole" identifier="Supply Chain Manager"/>
+    <active>true</active>
+    <creationDate transient="true">2011-05-23T12:29:19.280Z</creationDate>
+    <createdBy transient="true" id="100" entity-name="ADUser" identifier="Openbravo"/>
+    <updated transient="true">2011-05-23T12:29:19.280Z</updated>
+    <updatedBy transient="true" id="100" entity-name="ADUser" identifier="Openbravo"/>
+    <editableField>true</editableField>
+  </ADWindowAccess>
+  <ADWindowAccess id="40288104301C5E3101301C66F8250029" identifier="Document Sequence - Supply Chain Manager">
+    <id>40288104301C5E3101301C66F8250029</id>
+    <window id="112" entity-name="ADWindow" identifier="Document Sequence"/>
+    <role id="402881072F1169CF012F1170499F0018" entity-name="ADRole" identifier="Supply Chain Manager"/>
+    <active>true</active>
+    <creationDate transient="true">2011-05-23T12:29:28.230Z</creationDate>
+    <createdBy transient="true" id="100" entity-name="ADUser" identifier="Openbravo"/>
+    <updated transient="true">2011-05-23T12:29:28.230Z</updated>
+    <updatedBy transient="true" id="100" entity-name="ADUser" identifier="Openbravo"/>
+    <editableField>true</editableField>
+  </ADWindowAccess>
+  <ADWindowAccess id="40288104302CBE2E01302CD9806300AD" identifier="My Purchase Orders - Vendor B2B Contact">
+    <id>40288104302CBE2E01302CD9806300AD</id>
+    <window id="40288104302CBE2E01302CCB0ED2003E" entity-name="ADWindow" identifier="My Purchase Orders"/>
+    <role id="402881072F1169CF012F11749FDB0032" entity-name="ADRole" identifier="Vendor B2B Contact"/>
+    <active>true</active>
+    <creationDate transient="true">2011-05-26T17:08:29.667Z</creationDate>
+    <createdBy transient="true" id="100" entity-name="ADUser" identifier="Openbravo"/>
+    <updated transient="true">2011-05-26T17:08:29.667Z</updated>
+    <updatedBy transient="true" id="100" entity-name="ADUser" identifier="Openbravo"/>
+    <editableField>true</editableField>
+  </ADWindowAccess>
+  <ADWindowAccess id="402881053007A97D013007BCD985004C" identifier="Vendor Managed Storage Bin - Vendor B2B Contact">
+    <id>402881053007A97D013007BCD985004C</id>
+    <window id="402881053007A97D013007B110BC000E" entity-name="ADWindow" identifier="Vendor Managed Storage Bin"/>
+    <role id="402881072F1169CF012F11749FDB0032" entity-name="ADRole" identifier="Vendor B2B Contact"/>
+    <active>true</active>
+    <creationDate transient="true">2011-05-19T12:11:14.949Z</creationDate>
+    <createdBy transient="true" id="100" entity-name="ADUser" identifier="Openbravo"/>
+    <updated transient="true">2011-05-19T12:11:14.949Z</updated>
+    <updatedBy transient="true" id="100" entity-name="ADUser" identifier="Openbravo"/>
+    <editableField>true</editableField>
+  </ADWindowAccess>
+  <ADWindowAccess id="402881062FFCD095012FFCDE37A5003C" identifier="My Company Details - Vendor B2B Contact">
+    <id>402881062FFCD095012FFCDE37A5003C</id>
+    <window id="402881012FC9F4D4012FCA1CAF7F0083" entity-name="ADWindow" identifier="My Company Details"/>
+    <role id="402881072F1169CF012F11749FDB0032" entity-name="ADRole" identifier="Vendor B2B Contact"/>
+    <active>true</active>
+    <creationDate transient="true">2011-05-17T09:31:52.358Z</creationDate>
+    <createdBy transient="true" id="100" entity-name="ADUser" identifier="Openbravo"/>
+    <updated transient="true">2011-05-17T09:32:00.109Z</updated>
+    <updatedBy transient="true" id="100" entity-name="ADUser" identifier="Openbravo"/>
+    <editableField>true</editableField>
+  </ADWindowAccess>
+  <ADWindowAccess id="402881062FFCD095012FFCDE81E90041" identifier="My Products - Vendor B2B Contact">
+    <id>402881062FFCD095012FFCDE81E90041</id>
+    <window id="402881052FF82930012FF8326FED0031" entity-name="ADWindow" identifier="My Products"/>
+    <role id="402881072F1169CF012F11749FDB0032" entity-name="ADRole" identifier="Vendor B2B Contact"/>
+    <active>true</active>
+    <creationDate transient="true">2011-05-17T09:32:11.369Z</creationDate>
+    <createdBy transient="true" id="100" entity-name="ADUser" identifier="Openbravo"/>
+    <updated transient="true">2011-05-17T09:32:15.120Z</updated>
+    <updatedBy transient="true" id="100" entity-name="ADUser" identifier="Openbravo"/>
+    <editableField>true</editableField>
+  </ADWindowAccess>
+  <ADWindowAccess id="402881062FFCD095012FFCDEAEBA0046" identifier="My Pricelist Versions - Vendor B2B Contact">
+    <id>402881062FFCD095012FFCDEAEBA0046</id>
+    <window id="402881052FF44736012FF4DD04FD002C" entity-name="ADWindow" identifier="My Pricelist Versions"/>
+    <role id="402881072F1169CF012F11749FDB0032" entity-name="ADRole" identifier="Vendor B2B Contact"/>
+    <active>true</active>
+    <creationDate transient="true">2011-05-17T09:32:22.843Z</creationDate>
+    <createdBy transient="true" id="100" entity-name="ADUser" identifier="Openbravo"/>
+    <updated transient="true">2011-05-17T09:32:22.843Z</updated>
+    <updatedBy transient="true" id="100" entity-name="ADUser" identifier="Openbravo"/>
+    <editableField>true</editableField>
+  </ADWindowAccess>
+  <ADWindowAccess id="402881062FFCD095012FFCDF17D30049" identifier="Matched PO Lines - Vendor B2B Contact">
+    <id>402881062FFCD095012FFCDF17D30049</id>
+    <window id="402881062FE83943012FE927C2840114" entity-name="ADWindow" identifier="Matched PO Lines"/>
+    <role id="402881072F1169CF012F11749FDB0032" entity-name="ADRole" identifier="Vendor B2B Contact"/>
+    <active>true</active>
+    <creationDate transient="true">2011-05-17T09:32:49.748Z</creationDate>
+    <createdBy transient="true" id="100" entity-name="ADUser" identifier="Openbravo"/>
+    <updated transient="true">2011-05-17T09:32:49.748Z</updated>
+    <updatedBy transient="true" id="100" entity-name="ADUser" identifier="Openbravo"/>
+    <editableField>false</editableField>
+  </ADWindowAccess>
+  <ADWindowAccess id="402881062FFCD095012FFCDF48DF004C" identifier="Matched Invoice Lines - Vendor B2B Contact">
+    <id>402881062FFCD095012FFCDF48DF004C</id>
+    <window id="402881022FEA3364012FEA6BC1350057" entity-name="ADWindow" identifier="Matched Invoice Lines"/>
+    <role id="402881072F1169CF012F11749FDB0032" entity-name="ADRole" identifier="Vendor B2B Contact"/>
+    <active>true</active>
+    <creationDate transient="true">2011-05-17T09:33:02.303Z</creationDate>
+    <createdBy transient="true" id="100" entity-name="ADUser" identifier="Openbravo"/>
+    <updated transient="true">2011-05-17T09:33:02.303Z</updated>
+    <updatedBy transient="true" id="100" entity-name="ADUser" identifier="Openbravo"/>
+    <editableField>false</editableField>
+  </ADWindowAccess>
+  <ADWindowAccess id="4028810830023A050130024FBD30000E" identifier="My Invoices - Vendor B2B Contact">
+    <id>4028810830023A050130024FBD30000E</id>
+    <window id="40288108300221F8013002270902000A" entity-name="ADWindow" identifier="My Invoices"/>
+    <role id="402881072F1169CF012F11749FDB0032" entity-name="ADRole" identifier="Vendor B2B Contact"/>
+    <active>true</active>
+    <creationDate transient="true">2011-05-18T10:53:58.192Z</creationDate>
+    <createdBy transient="true" id="100" entity-name="ADUser" identifier="Openbravo"/>
+    <updated transient="true">2011-05-18T17:04:47.903Z</updated>
+    <updatedBy transient="true" id="100" entity-name="ADUser" identifier="Openbravo"/>
+    <editableField>true</editableField>
+  </ADWindowAccess>
+  <ADProcessAccess id="402881003017F2600130181E078E007F" identifier="Price List Report - Supply Chain Manager">
+    <id>402881003017F2600130181E078E007F</id>
+    <process id="800067" entity-name="ADProcess" identifier="Price List Report"/>
+    <role id="402881072F1169CF012F1170499F0018" entity-name="ADRole" identifier="Supply Chain Manager"/>
+    <active>true</active>
+    <creationDate transient="true">2011-05-22T16:31:19.182Z</creationDate>
+    <createdBy transient="true" id="100" entity-name="ADUser" identifier="Openbravo"/>
+    <updated transient="true">2011-05-22T16:31:24.341Z</updated>
+    <updatedBy transient="true" id="100" entity-name="ADUser" identifier="Openbravo"/>
+    <editableField>true</editableField>
+  </ADProcessAccess>
+  <ADProcessAccess id="40288102300962BD013009AAC6A30146" identifier="New Advanced Shipment Notice - Vendor B2B Contact">
+    <id>40288102300962BD013009AAC6A30146</id>
+    <process id="40288102300962BD0130099F92710106" entity-name="ADProcess" identifier="New Advanced Shipment Notice"/>
+    <role id="402881072F1169CF012F11749FDB0032" entity-name="ADRole" identifier="Vendor B2B Contact"/>
+    <active>true</active>
+    <creationDate transient="true">2011-05-19T21:10:44.899Z</creationDate>
+    <createdBy transient="true" id="100" entity-name="ADUser" identifier="Openbravo"/>
+    <updated transient="true">2011-05-19T21:10:44.899Z</updated>
+    <updatedBy transient="true" id="100" entity-name="ADUser" identifier="Openbravo"/>
+    <editableField>true</editableField>
+  </ADProcessAccess>
+  <ADProcessAccess id="40288104301BE43201301C556BE700A0" identifier="Create Purchase Invoices from Deliveries - Supply Chain Manager">
+    <id>40288104301BE43201301C556BE700A0</id>
+    <process id="800075" entity-name="ADProcess" identifier="Create Purchase Invoices from Deliveries"/>
+    <role id="402881072F1169CF012F1170499F0018" entity-name="ADRole" identifier="Supply Chain Manager"/>
+    <active>true</active>
+    <creationDate transient="true">2011-05-23T12:10:18.215Z</creationDate>
+    <createdBy transient="true" id="100" entity-name="ADUser" identifier="Openbravo"/>
+    <updated transient="true">2011-05-23T12:10:18.215Z</updated>
+    <updatedBy transient="true" id="100" entity-name="ADUser" identifier="Openbravo"/>
+    <editableField>false</editableField>
+  </ADProcessAccess>
+  <ADProcessAccess id="40288104301BE43201301C55A68B00A3" identifier="Create Purchase Orders - Supply Chain Manager">
+    <id>40288104301BE43201301C55A68B00A3</id>
+    <process id="800163" entity-name="ADProcess" identifier="Create Purchase Orders"/>
+    <role id="402881072F1169CF012F1170499F0018" entity-name="ADRole" identifier="Supply Chain Manager"/>
+    <active>true</active>
+    <creationDate transient="true">2011-05-23T12:10:33.227Z</creationDate>
+    <createdBy transient="true" id="100" entity-name="ADUser" identifier="Openbravo"/>
+    <updated transient="true">2011-05-23T12:10:33.227Z</updated>
+    <updatedBy transient="true" id="100" entity-name="ADUser" identifier="Openbravo"/>
+    <editableField>false</editableField>
+  </ADProcessAccess>
+  <ADProcessAccess id="40288104301BE43201301C55D21700A6" identifier="Create Purchase Order - Supply Chain Manager">
+    <id>40288104301BE43201301C55D21700A6</id>
+    <process id="1004400000" entity-name="ADProcess" identifier="Create Purchase Order"/>
+    <role id="402881072F1169CF012F1170499F0018" entity-name="ADRole" identifier="Supply Chain Manager"/>
+    <active>true</active>
+    <creationDate transient="true">2011-05-23T12:10:44.375Z</creationDate>
+    <createdBy transient="true" id="100" entity-name="ADUser" identifier="Openbravo"/>
+    <updated transient="true">2011-05-23T12:10:44.375Z</updated>
+    <updatedBy transient="true" id="100" entity-name="ADUser" identifier="Openbravo"/>
+    <editableField>false</editableField>
+  </ADProcessAccess>
+</ob:Openbravo>

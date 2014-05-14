@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>WYSIWYG Html Editor - CKeditor for Openbravo</title>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type" />
+    <script type="text/javascript" src="../ckeditor/ckeditor.js"></script>
+    <script src="../ckeditor/_samples/sample.js" type="text/javascript"></script>
+   
+</head>
+<body>
+
+    <!-- This <div> holds alert messages to be display in the sample page. -->
+    <div id="alerts">
+        <noscript>
+            <p>
+                <strong>CKEditor requires JavaScript to run</strong>. In a browser with no JavaScript
+                support, like yours, you should still see the contents (HTML data) and you should
+                be able to edit it normally, without a rich editor interface.
+            </p>
+        </noscript>
+    </div>
+
+    <textarea class="ckeditor" cols="80" id="editor1" name="editor1" rows="10">&lt;p&gt;This is some &lt;strong&gt;sample text&lt;/strong&gt;. You are using &lt;a href="http://ckeditor.com/"&gt;CKEditor&lt;/a&gt;.&lt;/p&gt;</textarea>
+    <script type="text/javascript">
+        //<![CDATA[
+
+            CKEDITOR.replace( 'editor1',
+                       {
+                
+                uiColor : '#b5ca90',
+                toolbar : [
+                            ['Source','-','Save','NewPage','Preview','-','Templates'],
+                            ['Cut','Copy','Paste','PasteText','PasteFromWord','-','Print', 'SpellChecker', 'Scayt'],
+                            ['Undo','Redo','-','Find','Replace','-','SelectAll','RemoveFormat'],
+                            '/',
+                            ['Bold','Italic','Underline','Strike','-','Subscript','Superscript'],
+                            ['NumberedList','BulletedList','-','Outdent','Indent','Blockquote','CreateDiv'],
+                            ['JustifyLeft','JustifyCenter','JustifyRight','JustifyBlock'],
+                            ['BidiLtr', 'BidiRtl'],
+                            ['Link','Unlink','Anchor'],
+                            ['Image','Table','HorizontalRule','Smiley','SpecialChar','PageBreak'],
+                            '/',
+                            ['Styles','Format','Font','FontSize'],
+                            ['TextColor','BGColor'],
+                            ['ShowBlocks','-','About']
+                          ],
+                
+                       });
+            CKEDITOR.on('instanceReady', function( evt ) { var editor = evt.editor; editor.execCommand('maximize'); });
+
+        //]]>
+        </script>
+</body>
+</html>

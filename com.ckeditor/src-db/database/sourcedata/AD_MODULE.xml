@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+<!--402881002FBF4024012FBF72BAF30042--><AD_MODULE>
+<!--402881002FBF4024012FBF72BAF30042-->  <AD_MODULE_ID><![CDATA[402881002FBF4024012FBF72BAF30042]]></AD_MODULE_ID>
+<!--402881002FBF4024012FBF72BAF30042-->  <AD_CLIENT_ID><![CDATA[0]]></AD_CLIENT_ID>
+<!--402881002FBF4024012FBF72BAF30042-->  <AD_ORG_ID><![CDATA[0]]></AD_ORG_ID>
+<!--402881002FBF4024012FBF72BAF30042-->  <ISACTIVE><![CDATA[Y]]></ISACTIVE>
+<!--402881002FBF4024012FBF72BAF30042-->  <NAME><![CDATA[CKeditor for Openbravo - WYSIWYG Html Editor]]></NAME>
+<!--402881002FBF4024012FBF72BAF30042-->  <VERSION><![CDATA[3.5.4]]></VERSION>
+<!--402881002FBF4024012FBF72BAF30042-->  <DESCRIPTION><![CDATA[This module provides the CKEditor source and a sample widget so that it can be used in Openbravo. CKEditor is a text editor to be used inside web pages. It's a WYSIWYG editor, which means that the text being edited on it looks as similar as possible to th]]></DESCRIPTION>
+<!--402881002FBF4024012FBF72BAF30042-->  <HELP><![CDATA[Because CKEditor is licensed under flexible Open Source and commercial licenses, you'll be able to integrate and use it inside any kind of application. This is the ideal editor for developers, created to provide easy and powerful solutions to their users.
+
+This module is freely published by a CKEditor and Openbravo enthusiast and is not officially endorsed or supported by CKSource.com. Community support may be available in http://forge.openbravo.com or http://cksource.com/forums/]]></HELP>
+<!--402881002FBF4024012FBF72BAF30042-->  <URL><![CDATA[http://forge.openbravo.com/projects/ckeditorforopenbravo]]></URL>
+<!--402881002FBF4024012FBF72BAF30042-->  <TYPE><![CDATA[M]]></TYPE>
+<!--402881002FBF4024012FBF72BAF30042-->  <LICENSE><![CDATA[http://www.mozilla.org/MPL/MPL-1.1.html]]></LICENSE>
+<!--402881002FBF4024012FBF72BAF30042-->  <JAVAPACKAGE><![CDATA[com.ckeditor]]></JAVAPACKAGE>
+<!--402881002FBF4024012FBF72BAF30042-->  <LICENSETYPE><![CDATA[MPL1.1]]></LICENSETYPE>
+<!--402881002FBF4024012FBF72BAF30042-->  <AUTHOR><![CDATA[J.Marcos Bernal
+<jmarcos.bernal@gmail.com>]]></AUTHOR>
+<!--402881002FBF4024012FBF72BAF30042-->  <ISTRANSLATIONREQUIRED><![CDATA[N]]></ISTRANSLATIONREQUIRED>
+<!--402881002FBF4024012FBF72BAF30042-->  <AD_LANGUAGE><![CDATA[en_US]]></AD_LANGUAGE>
+<!--402881002FBF4024012FBF72BAF30042-->  <HASCHARTOFACCOUNTS><![CDATA[N]]></HASCHARTOFACCOUNTS>
+<!--402881002FBF4024012FBF72BAF30042-->  <ISTRANSLATIONMODULE><![CDATA[N]]></ISTRANSLATIONMODULE>
+<!--402881002FBF4024012FBF72BAF30042-->  <HASREFERENCEDATA><![CDATA[N]]></HASREFERENCEDATA>
+<!--402881002FBF4024012FBF72BAF30042-->  <UPDATEINFO><![CDATA[Removed java files, corrected core version dependency]]></UPDATEINFO>
+<!--402881002FBF4024012FBF72BAF30042-->  <ISCOMMERCIAL><![CDATA[N]]></ISCOMMERCIAL>
+<!--402881002FBF4024012FBF72BAF30042--></AD_MODULE>
+
+</data>
